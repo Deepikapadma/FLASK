@@ -18,7 +18,7 @@ import pymysql
 # instance of flask application
 app = Flask(__name__)
 app.secret_key = 'aef2f0e3683344d0991eaeb046d983eb'
-app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://gwcuser:gwcuser@34.100.203.42/gwcpmp"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+pymysql://gwcuser:gwcuser@34.100.203.42/gwcpmpnew"
 engine = create_engine('mysql+pymysql://gwcuser:gwcuser@34.100.203.42/gwcpmp')
 db = SQLAlchemy(app)
 app.app_context().push()
